@@ -2,7 +2,6 @@ import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.express as px
-import pandas as pd
 df = px.data.tips()
 st.title("Interactive Visualizations")
 cat_cols = list(df.select_dtypes(include='O').columns)
